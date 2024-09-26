@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="biblioteka3.MainPage"
+             BackgroundColor="#14213D">
+
+    <ScrollView
+        Margin="10">
+        <VerticalStackLayout>
+
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+
+                <VerticalStackLayout>
+                    <Border  Stroke="#FCA311" StrokeDashArray="1" Margin="16">
+
+                        <Label Text="Dostępne u nas książki"  FontSize="18" />
+                      
+                    </Border>
+                </VerticalStackLayout>
+
+                
+                    <VerticalStackLayout Grid.Row="0" Grid.Column="2">
+                   
+                        <Label Text="Wypożycz książkę"  FontSize="18" Margin="10"/>
+               <Entry Placeholder="Podaj ID książki"  BackgroundColor="White"/>
+                    <Button Text="Wypożycz" Clicked="Button_Clicked"  x:Name="CounterBtn"
+                         BackgroundColor="#FCA311" WidthRequest="100" HorizontalOptions="End"   TextColor="White" Margin="16" />
+
+
+
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Row="1" Grid.Column="2">
+                    <Label Text="Oddaj książkę"  FontSize="18"  Margin="10"/>
+                    <Entry Placeholder="Podaj ID książki"  BackgroundColor="White"/>
+            <Button
+             Text="Oddaj"
+             Clicked="Button_Clicked" 
+             x:Name="CounterBtn"
+               BackgroundColor="#FCA311"
+                WidthRequest="100"
+                HorizontalOptions="End"
+                Margin="16"
+                TextColor="White" />
+                  
+                </VerticalStackLayout>
+            </Grid>
+
+
+
+</VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
