@@ -8,8 +8,8 @@
         Margin="10">
         <VerticalStackLayout>
 
-
-            <Grid>
+            
+                <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
@@ -19,26 +19,31 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="2*"/>
                 </Grid.RowDefinitions>
-
-                <VerticalStackLayout>
-                    <Border  Stroke="#FCA311" StrokeDashArray="1" Margin="16">
+                <Border  Stroke="#FCA311" StrokeDashArray="1" Margin="16">
+                    <VerticalStackLayout>
+                    
 
                         <Label Text="Dostępne u nas książki"  FontSize="18" />
-                      
-                    </Border>
-                </VerticalStackLayout>
+                        
 
-                
+                        <Label Text="ID" Grid.Row="1" /> 
+                        <Label Text="Tytuł" />
+                        <Label Text="Dostępna ilość" />
+
+                    </VerticalStackLayout>
+            </Border>
+
+                <Border  Stroke="#FCA311" StrokeDashArray="1" Margin="16" HorizontalOptions="End">
                     <VerticalStackLayout Grid.Row="0" Grid.Column="2">
-                   
-                        <Label Text="Wypożycz książkę"  FontSize="18" Margin="10"/>
-               <Entry Placeholder="Podaj ID książki"  BackgroundColor="White"/>
-                    <Button Text="Wypożycz" Clicked="Button_Clicked"  x:Name="CounterBtn"
+                    
+                        <Label Text="Wypożycz książkę"  FontSize="18" Padding="10"/>
+                        <Entry Placeholder="Podaj ID książki"  BackgroundColor="White"/>
+                        <Button Text="Wypożycz" Clicked="Button_Clicked"  x:Name="CounterBtn"
                          BackgroundColor="#FCA311" WidthRequest="100" HorizontalOptions="End"   TextColor="White" Margin="16" />
 
-
-
-                </VerticalStackLayout>
+                    </VerticalStackLayout>
+                </Border>
+                    
                 <VerticalStackLayout Grid.Row="1" Grid.Column="2">
                     <Label Text="Oddaj książkę"  FontSize="18"  Margin="10"/>
                     <Entry Placeholder="Podaj ID książki"  BackgroundColor="White"/>
@@ -53,11 +58,12 @@
                 TextColor="White" />
                   
                 </VerticalStackLayout>
+                    
             </Grid>
+           
 
 
-
-</VerticalStackLayout>
+        </VerticalStackLayout>
     </ScrollView>
 
 </ContentPage>
