@@ -16,7 +16,7 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-                <Border Stroke="#FCA311" StrokeThickness="1" Padding="16" StrokeShape="RoundRectangle 2">
+                <Border Stroke="#FCA311" StrokeThickness="1" Padding="16" StrokeShape="RoundRectangle 2" Margin="0,0,0,10">
                     <VerticalStackLayout>
                         <Label Text="Dostępne u nas książki" FontSize="18" FontAttributes="Bold" TextColor="White"   Margin="10" />
                         <HorizontalStackLayout Spacing="50">
@@ -45,7 +45,7 @@
                     </VerticalStackLayout>
                 </Border>
 
-                <Border Stroke="#FCA311" StrokeThickness="1" Padding="16" StrokeShape="RoundRectangle 2" Grid.Column="1">
+                <Border Stroke="#FCA311" StrokeThickness="1" Padding="16" StrokeShape="RoundRectangle 2" Grid.Column="1" Margin="10,0,0,10">
                     <VerticalStackLayout Spacing="5">
                         <Label Text="Wypożycz książkę" FontSize="18" TextColor="White" Margin="10" />
                         <Entry Text="Podaj ID książki"  x:Name="Wypozycz" BackgroundColor="White" Margin="10" />

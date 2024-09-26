@@ -4,6 +4,7 @@ namespace biblioteka3
 {
     public partial class MainPage : ContentPage
     {
+        //Zmienne przechowujące liczbę dostępnych egzemplarzy książek.
         int potopIlosc = 2;
         int tadeuszIlosc = 1;
         int zbrodniaIlosc = 4;
@@ -20,10 +21,10 @@ namespace biblioteka3
             TadeuszIlosc.Text = tadeuszIlosc.ToString();
             ZbrodniaIlosc.Text = zbrodniaIlosc.ToString();
         }
-
+        // Metoda do obsługi wypożyczania książek
         void BorrowBook(object sender, EventArgs e)
         {
-            // Poprawione przypisanie zmiennej id
+            
             int id;
             if (!int.TryParse(Wypozycz.Text, out id))
             {
@@ -60,6 +61,7 @@ namespace biblioteka3
             UpdateBooksCount();
         }
 
+        // Metoda do obsługi oddawania książek
         void ReturnBook(object sender, EventArgs e)
         {
             int id;
@@ -84,7 +86,7 @@ namespace biblioteka3
                     DisplayAlert("Dzięki za oddanie książki", "", "OK");
                     break;
                 default:
-                    DisplayAlert("Książka o podanym ID nie istnieje!", "", "OK");
+                    DisplayAlert("Error!", "Nie ma u nas książki o takim ID", "OK");
                     break;
             }
 
