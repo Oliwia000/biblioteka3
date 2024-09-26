@@ -25,21 +25,21 @@
                             <Label Text="Dostępna ilość" FontSize="18"  FontAttributes="Bold" TextColor="White"  Margin="10"/>
                         </HorizontalStackLayout>
 
-                        <HorizontalStackLayout Spacing="40">
+                        <HorizontalStackLayout Spacing="60">
                             <Label Text="1"  TextColor="White"  Margin="10"/>
                             <Label Text="Potop - Henryk Sienkiewicz" TextColor="White"  Margin="10" />
-                            <Label x:Name="PotopIlosc" Text="2" TextColor="White"  Margin="10" />
+                            <Label x:Name="PotopIlosc" Text="2" TextColor="White"  Margin="10" HorizontalOptions="End"  />
                         </HorizontalStackLayout>
 
-                        <HorizontalStackLayout Spacing="40">
-                            <Label Text="2" TextColor="White"  Margin="10"/>
+                        <HorizontalStackLayout Spacing="60">
+                            <Label Text="2" TextColor="White"  Margin="10" />
                             <Label Text="Pan Tadeusz - Adam Mickiewicz" TextColor="White"  Margin="10"/>
-                            <Label x:Name="TadeuszIlosc" Text="1"  TextColor="White"  Margin="10"/>
+                            <Label x:Name="TadeuszIlosc" Text="1"  TextColor="White"  Margin="10" HorizontalOptions="End"/>
                         </HorizontalStackLayout>
-                        <HorizontalStackLayout Spacing="40" >
+                        <HorizontalStackLayout Spacing="60" >
                             <Label Text="3" TextColor="White"  Margin="10"/>
                             <Label Text="Zbrodnia i Kara - Fiodor Dostojewski" TextColor="White" Margin="10" />
-                            <Label x:Name="ZbrodniaIlosc" Text="4"  TextColor="White"  Margin="10"/>
+                            <Label x:Name="ZbrodniaIlosc" Text="4"  TextColor="White"  Margin="10" HorizontalOptions="End"/>
                         </HorizontalStackLayout>
 
                     </VerticalStackLayout>
