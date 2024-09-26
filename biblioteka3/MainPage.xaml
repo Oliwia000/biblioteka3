@@ -16,8 +16,8 @@
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
                     <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Border  Stroke="#FCA311" StrokeDashArray="1" Margin="16">
                     <VerticalStackLayout>
@@ -46,7 +46,7 @@
                     
                 <VerticalStackLayout Grid.Row="1" Grid.Column="2">
                     <Label Text="Oddaj książkę"  FontSize="18"  Margin="10"/>
-                    <Entry Placeholder="Podaj ID książki"  BackgroundColor="White"/>
+                    <Entry Placeholder="Podaj ID książki"  BackgroundColor="White" />
             <Button
              Text="Oddaj"
              Clicked="Button_Clicked" 
@@ -60,8 +60,7 @@
                 </VerticalStackLayout>
                     
             </Grid>
-           
-
+          
 
         </VerticalStackLayout>
     </ScrollView>
