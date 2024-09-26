@@ -16,47 +16,47 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-                <Border Stroke="#FCA311" StrokeThickness="1" Margin="16" StrokeShape="RoundRectangle 2">
+                <Border Stroke="#FCA311" StrokeThickness="1" Padding="16" StrokeShape="RoundRectangle 2">
                     <VerticalStackLayout>
-                        <Label Text="Dostępne u nas książki" FontSize="18" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" />
+                        <Label Text="Dostępne u nas książki" FontSize="18" FontAttributes="Bold" TextColor="White"   Margin="10" />
                         <HorizontalStackLayout Spacing="50">
-                            <Label Text="ID" FontSize="18"  FontAttributes="Bold" TextColor="White" />
-                            <Label Text="Tytuł" FontSize="18" FontAttributes="Bold"  TextColor="White"/>
-                            <Label Text="Dostępna ilość" FontSize="18"  FontAttributes="Bold" TextColor="White"/>
+                            <Label Text="ID" FontSize="18"  FontAttributes="Bold" TextColor="White"   Margin="10"/>
+                            <Label Text="Tytuł" FontSize="18" FontAttributes="Bold"  TextColor="White"  Margin="10"/>
+                            <Label Text="Dostępna ilość" FontSize="18"  FontAttributes="Bold" TextColor="White"  Margin="10"/>
                         </HorizontalStackLayout>
 
-                        <HorizontalStackLayout Spacing="60">
-                            <Label Text="1"  TextColor="White"/>
-                            <Label Text="Potop - Henryk Sienkiewicz" TextColor="White" />
-                            <Label x:Name="PotopIlosc" Text="2" TextColor="White" />
+                        <HorizontalStackLayout Spacing="40">
+                            <Label Text="1"  TextColor="White"  Margin="10"/>
+                            <Label Text="Potop - Henryk Sienkiewicz" TextColor="White"  Margin="10" />
+                            <Label x:Name="PotopIlosc" Text="2" TextColor="White"  Margin="10" />
                         </HorizontalStackLayout>
 
-                        <HorizontalStackLayout Spacing="60">
-                            <Label Text="2" TextColor="White"/>
-                            <Label Text="Pan Tadeusz - Adam Mickiewicz" TextColor="White" />
-                            <Label x:Name="TadeuszIlosc" Text="1"  TextColor="White"/>
+                        <HorizontalStackLayout Spacing="40">
+                            <Label Text="2" TextColor="White"  Margin="10"/>
+                            <Label Text="Pan Tadeusz - Adam Mickiewicz" TextColor="White"  Margin="10"/>
+                            <Label x:Name="TadeuszIlosc" Text="1"  TextColor="White"  Margin="10"/>
                         </HorizontalStackLayout>
-                        <HorizontalStackLayout Spacing="60">
-                            <Label Text="3" TextColor="White"/>
-                            <Label Text="Zbrodnia i Kara - Fiodor Dostojewski" TextColor="White" />
-                            <Label x:Name="ZbrodniaIlosc" Text="4"  TextColor="White"/>
+                        <HorizontalStackLayout Spacing="40" >
+                            <Label Text="3" TextColor="White"  Margin="10"/>
+                            <Label Text="Zbrodnia i Kara - Fiodor Dostojewski" TextColor="White" Margin="10" />
+                            <Label x:Name="ZbrodniaIlosc" Text="4"  TextColor="White"  Margin="10"/>
                         </HorizontalStackLayout>
 
                     </VerticalStackLayout>
                 </Border>
 
-                <Border Stroke="#FCA311" StrokeThickness="1" Margin="16" StrokeShape="RoundRectangle 2" Grid.Column="1">
+                <Border Stroke="#FCA311" StrokeThickness="1" Padding="16" StrokeShape="RoundRectangle 2" Grid.Column="1">
                     <VerticalStackLayout Spacing="5">
-                        <Label Text="Wypożycz książkę" FontSize="18" TextColor="White" />
-                        <Entry x:Name="Wypozycz" BackgroundColor="White" />
+                        <Label Text="Wypożycz książkę" FontSize="18" TextColor="White" Margin="10" />
+                        <Entry Text="Podaj ID książki"  x:Name="Wypozycz" BackgroundColor="White" Margin="10" />
                         <Button Text="Wypożycz" WidthRequest="150" HorizontalOptions="End" BackgroundColor="#FCA311" Clicked="BorrowBook" Margin="10" />
                     </VerticalStackLayout>
                 </Border>
 
-                <Border Stroke="#FCA311" StrokeThickness="1" Margin="16"StrokeShape="RoundRectangle 2" Grid.Column="1" Grid.Row="1">
+                <Border Stroke="#FCA311" StrokeThickness="1" Padding="16"   Grid.Column="1" Grid.Row="1" StrokeShape="RoundRectangle 2">
                     <VerticalStackLayout Spacing="5">
-                        <Label Text="Oddaj książkę"  FontSize="18"  TextColor="White"/>
-                        <Entry x:Name="Oddaj" BackgroundColor="White" />
+                        <Label Text="Oddaj książkę"  FontSize="18"  TextColor="White"  Margin="10"/>
+                        <Entry    Text="Podaj ID książki"  x:Name="Oddaj" BackgroundColor="White"  Margin="10"/>
                         <Button Text="Oddaj" WidthRequest="150" HorizontalOptions="End" BackgroundColor="#FCA311" Clicked="ReturnBook" Margin="10"/>
                     </VerticalStackLayout>
                 </Border>
