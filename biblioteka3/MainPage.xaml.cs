@@ -28,7 +28,7 @@ namespace biblioteka3
             int id;
             if (!int.TryParse(Wypozycz.Text, out id))
             {
-                DisplayAlert("Dziękujemy ", "", "OK");
+                DisplayAlert("Error! ", "Niepoprawna wartość", "OK");
                 return;
             }
 
@@ -75,15 +75,15 @@ namespace biblioteka3
             {
                 case 1:
                     potopIlosc += 1;
-                    DisplayAlert("Dzięki za oddanie książki", "", "OK");
+                    DisplayAlert("Dzękujemy", " Dzękujemy za zwrócenie nam książki.Zapraszamy ponownie.", "OK");
                     break;
                 case 2:
                     tadeuszIlosc += 1;
-                    DisplayAlert("Dzięki za oddanie książki", "", "OK");
+                    DisplayAlert("Dzękujemy", "Dzękujemy za zwrócenie nam książki.Zapraszamy ponownie.", "OK");
                     break;
                 case 3:
                     zbrodniaIlosc += 1;
-                    DisplayAlert("Dzięki za oddanie książki", "", "OK");
+                    DisplayAlert("Dzękujemy", "Dzękujemy za zwrócenie nam książki.Zapraszamy ponownie.", "OK");
                     break;
                 default:
                     DisplayAlert("Error!", "Nie ma u nas książki o takim ID", "OK");
