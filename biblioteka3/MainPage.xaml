@@ -30,19 +30,19 @@
  
                             <Label Text="ID" FontSize="18" FontAttributes="Bold" TextColor="White" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start"/>
                             <Label Text="Tytuł" FontSize="18" FontAttributes="Bold" TextColor="White" Grid.Row="0" Grid.Column="1" HorizontalOptions="Start"/>
-                            <Label Text="Dostępna ilość" FontSize="18" FontAttributes="Bold" TextColor="White" Grid.Row="0" Grid.Column="2" HorizontalOptions="End"/>
+                            <Label Text="Dostępna ilość" FontSize="18" FontAttributes="Bold" TextColor="White" Grid.Row="0" Grid.Column="2" HorizontalOptions="Center"/>
 
                             <Label Text="1" TextColor="White" FontSize="16" Grid.Row="1" Grid.Column="0" HorizontalOptions="Start" />
                             <Label Text="Potop - Henryk Sienkiewicz" TextColor="White" FontSize="16" Grid.Row="1" Grid.Column="1" HorizontalOptions="Start" />
-                            <Label x:Name="PotopIlosc" Text="2" TextColor="White" FontSize="16" Grid.Row="1" Grid.Column="2" HorizontalOptions="End" />
+                            <Label x:Name="PotopIlosc" Text="2" TextColor="White" FontSize="16" Grid.Row="1" Grid.Column="2" HorizontalOptions="Center" />
                               
                             <Label Text="2" TextColor="White" FontSize="16" Grid.Row="2" Grid.Column="0" HorizontalOptions="Start" />
                             <Label Text="Pan Tadeusz - Adam Mickiewicz" TextColor="White" FontSize="16" Grid.Row="2" Grid.Column="1" HorizontalOptions="Start" />
-                            <Label x:Name="TadeuszIlosc" Text="1" TextColor="White" FontSize="16" Grid.Row="2" Grid.Column="2" HorizontalOptions="End" />
+                            <Label x:Name="TadeuszIlosc" Text="1" TextColor="White" FontSize="16" Grid.Row="2" Grid.Column="2" HorizontalOptions="Center" />
 
                             <Label Text="3" TextColor="White" FontSize="16" Grid.Row="3" Grid.Column="0" HorizontalOptions="Start" />
                             <Label Text="Zbrodnia i Kara - Fiodor Dostojewski" TextColor="White" FontSize="16" Grid.Row="3" Grid.Column="1" HorizontalOptions="Start" />
-                            <Label x:Name="ZbrodniaIlosc" Text="4" TextColor="White" FontSize="16" Grid.Row="3" Grid.Column="2" HorizontalOptions="End" />
+                            <Label x:Name="ZbrodniaIlosc" Text="4" TextColor="White" FontSize="16" Grid.Row="3" Grid.Column="2" HorizontalOptions="Center" />
 
                       </Grid>
                     </VerticalStackLayout>
