@@ -36,7 +36,7 @@ namespace biblioteka3
                     if (potopIlosc > 0)
                     {
                         potopIlosc -= 1;
-                        DisplayAlert("Sukces", "Wypożyczyłeś książkę 'Potop'.", "OK");
+                        DisplayAlert("Dziękujemy", "Dziękujemy za wypożyczenie u nas książki.Życzymy miłego czytania.", "OK");
                     }
 
                     else
@@ -48,7 +48,7 @@ namespace biblioteka3
                     if (tadeuszIlosc > 0)
                     {
                         tadeuszIlosc -= 1;
-                        DisplayAlert("Sukces", "Wypożyczyłeś książkę 'Pan Tadeusz'.", "OK");
+                        DisplayAlert("Dziękujemy", "Dziękujemy za wypożyczenie u nas książki.Życzymy miłego czytania.", "OK");
                     }
                     else
                     {
@@ -59,7 +59,7 @@ namespace biblioteka3
                     if (zbrodniaIlosc > 0)
                     {
                         zbrodniaIlosc -= 1;
-                        DisplayAlert("Sukces", "Wypożyczyłeś książkę 'Zbrodnia i Kara'.", "OK");
+                        DisplayAlert("Dziękujemy", "Dziękujemy za wypożyczenie u nas książki.Życzymy miłego czytania.", "OK");
                     }
 
                     else

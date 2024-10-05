@@ -59,7 +59,7 @@
 
                     <Border Stroke="#FCA311" StrokeThickness="1" Padding="16" StrokeShape="RoundRectangle 2">
                         <VerticalStackLayout Spacing="10">
-                       <Label Text="Oddaj książkę" FontSize="18" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" />
+                        <Label Text="Oddaj książkę" FontSize="18" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" />
                         <Entry Placeholder="Podaj ID książki" x:Name="Oddaj" BackgroundColor="White" TextColor="Gray" />
                         <Button Text="Oddaj" BackgroundColor="#FCA311" FontAttributes="Bold" CornerRadius="10" Padding="10" WidthRequest="150" HorizontalOptions="End" Clicked="ReturnBook" />
                         </VerticalStackLayout>
