@@ -4,7 +4,6 @@ namespace biblioteka3
 {
     public partial class MainPage : ContentPage
     {
-        //Zmienne przechowujące liczbę dostępnych egzemplarzy książek.
         int potopIlosc = 2;
         int tadeuszIlosc = 1;
         int zbrodniaIlosc = 4;
@@ -21,7 +20,6 @@ namespace biblioteka3
             TadeuszIlosc.Text = tadeuszIlosc.ToString();
             ZbrodniaIlosc.Text = zbrodniaIlosc.ToString();
         }
-        // Metoda do obsługi wypożyczania książek
         void BorrowBook(object sender, EventArgs e)
         {
             
@@ -36,21 +34,39 @@ namespace biblioteka3
             {
                 case 1:
                     if (potopIlosc > 0)
+                    {
                         potopIlosc -= 1;
+                        DisplayAlert("Sukces", "Wypożyczyłeś książkę 'Potop'.", "OK");
+                    }
+
                     else
+                    {
                         DisplayAlert("Brak", "Nie mamy tej książki dostępnej w bibliotece", "OK");
+                    }
                     break;
                 case 2:
                     if (tadeuszIlosc > 0)
+                    {
                         tadeuszIlosc -= 1;
+                        DisplayAlert("Sukces", "Wypożyczyłeś książkę 'Pan Tadeusz'.", "OK");
+                    }
                     else
+                    {
                         DisplayAlert("Brak", "Nie mamy tej książki dostępnej w bibliotece", "OK");
+                    }
                     break;
                 case 3:
                     if (zbrodniaIlosc > 0)
+                    {
                         zbrodniaIlosc -= 1;
+                        DisplayAlert("Sukces", "Wypożyczyłeś książkę 'Zbrodnia i Kara'.", "OK");
+                    }
+
                     else
+                    {
+
                         DisplayAlert("Brak", "Nie mamy tej książki dostępnej w bibliotece", "OK");
+                    }
                     break;
                 default:
                     DisplayAlert("Error!", "Nie ma u nas książki o takim ID", "OK");
@@ -61,7 +77,6 @@ namespace biblioteka3
             UpdateBooksCount();
         }
 
-        // Metoda do obsługi oddawania książek
         void ReturnBook(object sender, EventArgs e)
         {
             int id;
@@ -89,7 +104,6 @@ namespace biblioteka3
                     DisplayAlert("Error!", "Nie ma u nas książki o takim ID", "OK");
                     break;
             }
-
             UpdateBooksCount();
         }
     }

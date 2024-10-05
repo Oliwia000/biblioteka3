@@ -6,60 +6,65 @@
 
     <ScrollView Margin="10">
         <VerticalStackLayout>
-            <Grid>
+            <Grid ColumnSpacing="10" RowSpacing="20">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2.5*"/>
+                    <ColumnDefinition Width="2*"/>
                 </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
 
-                <Border Stroke="#FCA311" StrokeThickness="1" Padding="16" StrokeShape="RoundRectangle 2" Margin="0,0,0,10">
-                    <VerticalStackLayout>
-                        <Label Text="Dostępne u nas książki" FontSize="18" FontAttributes="Bold" TextColor="White"   Margin="10" />
-                        <HorizontalStackLayout Spacing="50">
-                            <Label Text="ID" FontSize="18"  FontAttributes="Bold" TextColor="White"   Margin="10"/>
-                            <Label Text="Tytuł" FontSize="18" FontAttributes="Bold"  TextColor="White"  Margin="10"/>
-                            <Label Text="Dostępna ilość" FontSize="18"  FontAttributes="Bold" TextColor="White"  Margin="10"/>
-                        </HorizontalStackLayout>
+                <Border Stroke="#FCA311" StrokeThickness="1" Padding="16" StrokeShape="RoundRectangle 2" Margin="0,0,10,0">
+                 <VerticalStackLayout Spacing="10">
+                    <Label Text="Dostępne u nas książki" FontSize="18" FontAttributes="Bold" TextColor="White" Margin="0,0,0,10" HorizontalOptions="Start" />
+                 <Grid ColumnSpacing="20" RowSpacing="10">
+                 <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="0.3*"/>
+                       <ColumnDefinition Width="2.5*"/>
+                       <ColumnDefinition Width="1*"/>
+                   </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+ 
+                            <Label Text="ID" FontSize="18" FontAttributes="Bold" TextColor="White" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start"/>
+                            <Label Text="Tytuł" FontSize="18" FontAttributes="Bold" TextColor="White" Grid.Row="0" Grid.Column="1" HorizontalOptions="Start"/>
+                            <Label Text="Dostępna ilość" FontSize="18" FontAttributes="Bold" TextColor="White" Grid.Row="0" Grid.Column="2" HorizontalOptions="End"/>
 
-                        <HorizontalStackLayout Spacing="60">
-                            <Label Text="1"  TextColor="White"  Margin="10"/>
-                            <Label Text="Potop - Henryk Sienkiewicz" TextColor="White"  Margin="10" />
-                            <Label x:Name="PotopIlosc" Text="2" TextColor="White"  Margin="10" HorizontalOptions="End"  />
-                        </HorizontalStackLayout>
+                            <Label Text="1" TextColor="White" FontSize="16" Grid.Row="1" Grid.Column="0" HorizontalOptions="Start" />
+                            <Label Text="Potop - Henryk Sienkiewicz" TextColor="White" FontSize="16" Grid.Row="1" Grid.Column="1" HorizontalOptions="Start" />
+                            <Label x:Name="PotopIlosc" Text="2" TextColor="White" FontSize="16" Grid.Row="1" Grid.Column="2" HorizontalOptions="End" />
+                              
+                            <Label Text="2" TextColor="White" FontSize="16" Grid.Row="2" Grid.Column="0" HorizontalOptions="Start" />
+                            <Label Text="Pan Tadeusz - Adam Mickiewicz" TextColor="White" FontSize="16" Grid.Row="2" Grid.Column="1" HorizontalOptions="Start" />
+                            <Label x:Name="TadeuszIlosc" Text="1" TextColor="White" FontSize="16" Grid.Row="2" Grid.Column="2" HorizontalOptions="End" />
 
-                        <HorizontalStackLayout Spacing="60">
-                            <Label Text="2" TextColor="White"  Margin="10" />
-                            <Label Text="Pan Tadeusz - Adam Mickiewicz" TextColor="White"  Margin="10"/>
-                            <Label x:Name="TadeuszIlosc" Text="1"  TextColor="White"  Margin="10" HorizontalOptions="End"/>
-                        </HorizontalStackLayout>
-                        <HorizontalStackLayout Spacing="60" >
-                            <Label Text="3" TextColor="White"  Margin="10"/>
-                            <Label Text="Zbrodnia i Kara - Fiodor Dostojewski" TextColor="White" Margin="10" />
-                            <Label x:Name="ZbrodniaIlosc" Text="4"  TextColor="White"  Margin="10" HorizontalOptions="End"/>
-                        </HorizontalStackLayout>
+                            <Label Text="3" TextColor="White" FontSize="16" Grid.Row="3" Grid.Column="0" HorizontalOptions="Start" />
+                            <Label Text="Zbrodnia i Kara - Fiodor Dostojewski" TextColor="White" FontSize="16" Grid.Row="3" Grid.Column="1" HorizontalOptions="Start" />
+                            <Label x:Name="ZbrodniaIlosc" Text="4" TextColor="White" FontSize="16" Grid.Row="3" Grid.Column="2" HorizontalOptions="End" />
 
+                      </Grid>
                     </VerticalStackLayout>
                 </Border>
 
-                <Border Stroke="#FCA311" StrokeThickness="1" Padding="16" StrokeShape="RoundRectangle 2" Grid.Column="1" Margin="10,0,0,10">
-                    <VerticalStackLayout Spacing="5">
-                        <Label Text="Wypożycz książkę" FontSize="18" TextColor="White" Margin="10" />
-                        <Entry Text="Podaj ID książki"  x:Name="Wypozycz" BackgroundColor="White" TextColor="Gray"  Margin="10" />
-                        <Button Text="Wypożycz" WidthRequest="150" HorizontalOptions="End" BackgroundColor="#FCA311" Clicked="BorrowBook" Margin="10" />
-                    </VerticalStackLayout>
-                </Border>
+                <VerticalStackLayout Grid.Column="1" VerticalOptions="Start" Spacing="20">
+                 <Border Stroke="#FCA311" StrokeThickness="1" Padding="16" StrokeShape="RoundRectangle 2" Margin="0,0,0,10">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Wypożycz książkę" FontSize="18" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" />
+                        <Entry Placeholder="Podaj ID książki" x:Name="Wypozycz" BackgroundColor="White" TextColor="Gray" />
+                        <Button Text="Wypożycz" BackgroundColor="#FCA311" FontAttributes="Bold" CornerRadius="10" Padding="10" WidthRequest="150" HorizontalOptions="End" Clicked="BorrowBook" />
+                        </VerticalStackLayout>
+                    </Border>
 
-                <Border Stroke="#FCA311" StrokeThickness="1" Padding="16"   Grid.Column="1" Grid.Row="1" StrokeShape="RoundRectangle 2">
-                    <VerticalStackLayout Spacing="5">
-                        <Label Text="Oddaj książkę"  FontSize="18"  TextColor="White"  Margin="10"/>
-                        <Entry    Text="Podaj ID książki"  x:Name="Oddaj" BackgroundColor="White"  TextColor="Gray" Margin="10"/>
-                        <Button Text="Oddaj" WidthRequest="150" HorizontalOptions="End" BackgroundColor="#FCA311" Clicked="ReturnBook" Margin="10"/>
-                    </VerticalStackLayout>
-                </Border>
+                    <Border Stroke="#FCA311" StrokeThickness="1" Padding="16" StrokeShape="RoundRectangle 2">
+                        <VerticalStackLayout Spacing="10">
+                       <Label Text="Oddaj książkę" FontSize="18" TextColor="White" FontAttributes="Bold" HorizontalOptions="Start" />
+                        <Entry Placeholder="Podaj ID książki" x:Name="Oddaj" BackgroundColor="White" TextColor="Gray" />
+                        <Button Text="Oddaj" BackgroundColor="#FCA311" FontAttributes="Bold" CornerRadius="10" Padding="10" WidthRequest="150" HorizontalOptions="End" Clicked="ReturnBook" />
+                        </VerticalStackLayout>
+                    </Border>
+                </VerticalStackLayout>
             </Grid>
         </VerticalStackLayout>
     </ScrollView>
